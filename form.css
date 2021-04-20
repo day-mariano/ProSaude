@@ -25,7 +25,7 @@
     flex-direction: row;
     align-items: center;
 }
-.number {
+.breadcrumb .number {
     width: 48px;
     height: 48px;
     color: white;
@@ -38,7 +38,17 @@
     align-items: center;
     justify-content: center;
 }
-.line {
+.breadcrumb .number.active {
+    width: 48px;
+    height: 48px;
+    background-color: var(--primary-color);
+    border-style: solid;
+    border-width: 4px;
+    border-color: var(--purble-50);
+    box-shadow: 0 0 0 1px var(--primary-color);
+
+}
+.breadcrumb .line {
     height: 1px;
     margin: 0;
     flex-grow: 1;

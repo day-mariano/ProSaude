@@ -7,6 +7,7 @@
     <title>Formulário</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="management.css">
 </head>
 <body>
     <header class="menu">
@@ -18,22 +19,212 @@
             <div class="container">
                 <ol class="breadcrumb">
                     <li>
-                        <div class="number">1</div>Gestão
-                        <hr class="line"></hr>
+                        <div class="number active">1</div>Gestão
+                        <hr class="line">
                     </li>
                     <li>
                         <div class="number">2</div>Recepção
-                        <hr class="line"></hr>
+                        <hr class="line">
                     </li>
                     <li>
                         <div class="number">3</div>Acolhimento
-                        <hr class="line"></hr>
+                        <hr class="line">
                     </li>
                     <li>
                         <div class="number">4</div>Encontro Clínico
                     </li>
                 </ol>
             </div>
+        </div>
+        <div class="container management-form-section">
+            <h2>Gestão</h2>
+            <form>
+                <div class="question">
+                    <h3>
+                        Responsáveis pela acessibilidade no serviço de saúde <div class="tooltip">?</div>
+                    </h3>
+                    <ul>
+                        <li>
+                            <input type="radio" id="q1a1" name="q1" value="a1">
+                            <label for="q1a1"><span>Possui um responsável pela acessibilidade no serviço de saúde.</span></label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q1a2" name="q1" value="a2">
+                            <label for="q1a2"><span>Possui mais de um responsável pela acessibilidade, contudo não pertecem a diferentes setores e/ou níveis hierárquicos.</span></label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q1a3" name="q1" value="a3">
+                            <label for="q1a3"><span>Possui um comitê de acessibilidade (diversos setores e níveis hierárquicos).</span></label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q1a4" name="q1" value="a4">
+                            <label for="q1a4"><span>Não possui responsável(eis) por acessibilidade no serviço de saúde.</span></label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h3>Planejamento e controle de ações de acessbilidade</h3>
+                    <ul>
+                        <li>
+                            <input type="radio" id="q2a1" name="q2" value="a1">
+                            <label for="q2a1"><span>Não possui planejamento ou controle de ações de acessibilidade.</span></label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q2a2" name="q2" value="a2">
+                            <label for="q2a2"><span>Possui diretrizes genéricas de acessibilidade para todo o serviço de saúde (um protocolo geral do que deve ser feito).</span></label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q2a3" name="q2" value="a3">
+                            <label for="q2a3"><span>Para cada setor do serviço de saúde possui um plano de ação, com objetivos a serem cumpridos.</span></label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q2a4" name="q2" value="a4">
+                            <label for="q2a4"><span>Para cada setor o serviço possui um plano de ação, com objetivos  a serem cumpridos e um sistema de controle de qualidade.</span></label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h3>Contrato com Terceirizadas <div class="tooltip">?</div></h3>
+                    <ul>
+                        <li>
+                            <input type="radio" id="q3a1" name="q3" value="a1">
+                            <label for="q3a1"><span>Não possui cláusula de acessibilidade acordada com a terceirizada.</span></label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q3a2" name="q3" value="a2">
+                            <label for="q3a2"><span>Possui uma cláusula que afirma o compromisso da empresa em treinar seus funcionários para o atendimento ao surdo/DA.</span></label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q3a3" name="q3" value="a3">
+                            <label for="q3a3"><span>Possui uma cláusula que afirma o compromisso da empresa em treinar seus funcionários para o atendimento ao surdo/DA conforme legislação em vigor.</span></label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q3a4" name="q3" value="a4">
+                            <label for="q3a4"><span>Possui uma cláusula que afirma o compromisso da empresa em treinar seus funcionários para o atendimento ao surdo/DA e a utilização de tecnologias assistivas, ou recursos de comunicação disponíveis no mercado.</span></label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q3a5" name="q3" value="a5">
+                            <label for="q3a5"><span>Possui cláusula de compromisso com a terceirizada submetida as diretrizes de acessibilidade da legislação em vigor e com planejamento estratégico pré-definidos pelo serviço de saúde.</span></label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q3a6" name="q3" value="a6">
+                            <label for="q3a6"><span>Não trabalha com terceirizada.</span></label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h3>Parcerias <div class="tooltip">?</div></h3>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="q4a1" name="q4" value="a1"><label for="q4a1">Não possui parcerias.</label>
+
+                        </li>
+                        <li>
+                            <input type="checkbox" id="q4a2" name="q4" value="a2">
+                            <label for="q4a2"><span>Possui parceria com outras instituições de saúde que atendem a pessoa com deficiência auditiva (encaminhamento para profissionais especializados).</span></label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="q4a3" name="q4" value="a3">
+                            <label for="q4a3"><span>Parceria com instituições que atendem a pessoa Surda (terceiro setor ou outra).</span></label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="q4a4" name="q4" value="a4">
+                            <label for="q4a4"><span>Parcerias com a universidade (estágio de intépretes ou professores de Libras, programas relacionados a língua de sinais,saúde auditiva, ou áreas afins).</span></label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h3>Treinamento e desenvolvimento de habilidades <div class="tooltip">?</div></h3>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="q5a1" name="q5" value="a1">
+                            <label for="q5a1"><span>Programa de Treinamento Contínuo (LIBRAS, Cultura Surda, podendo ter também recursos de comunicação alternativos).</span></label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="q5a2" name="q5" value="a2">
+                            <label for="q5a2"><span>Treinamento Pontual - Curso de LIBRAS presencial menos de 90h.</span></label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="q5a3" name="q5" value="a3">
+                            <label for="q5a3"><span>Treinamento Pontual -  Curso de  LIBRAS online menos de 90h.</span></label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="q5a4" name="q5" value="a4"><label for="q5a4"><span>Treinamento Pontual - Curso de  LIBRAS + Treinamento Cultural presencial 90h ou mais.</span></label>
+
+                        </li>
+                        <li>
+                            <input type="checkbox" id="q5a5" name="q5" value="a5">
+                            <label for="q5a5"><span>Treinamento Pontual -  Curso de  LIBRAS + Treinamento Cultural online 90h ou mais.</span></label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="q5a6" name="q5" value="a6">
+                            <label for="q5a6"><span>Treinamento Pontual -  Workshop/Minicurso Prático LIBRAS + Treinamento Cultural (6h ou mais).</span></label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="q5a7" name="q5" value="a7">
+                            <label for="q5a7"><span>Treinamento Pontual -  Curso desenvolvimento habilidades para o atendimento a pessoa com DA.</span></label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="q5a8" name="q5" value="a8">
+                            <label for="q5a8"><span>Treinamento Pontual -  Sensibilização/Concientização (1h a 3h) sobre surdez, Cultura Surda, necessidades desta população, estratégias de comunicação.</span></label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="q5a9" name="q5" value="a9">
+                            <label for="q5a9"><span>Intercâmbio de experiências com Surdos.</span></label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="q5a10" name="q5" value="a10">
+                            <label for="q5a10"><span>Nenhum tipo de treinamento ou desenvolvimento de habilidades.</span></label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <h3>Quantidade de pessoas treinadas <div class="tooltip">?</div></h3>
+                    <ul>
+                        <li>
+                            <input type="radio" id="q6a1" name="q6" value="a1">
+                            <label for="q6a1"><span>Todos os profissionais.</span></label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q6a2" name="q6" value="a2">
+                            <label for="q6a2"><span>1 profissional por setor/função por turno.</span></label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q6a3" name="q6" value="a3">
+                            <label for="q6a3"><span>2 profissional por setor/função  por turno.</span></label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q6a4" name="q6" value="a4">
+                            <label for="q6a4"><span>3 a 4 profissional por setor/função por turno.</span></label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q6a5" name="q6" value="a5">
+                            <label for="q6a5"><span>1 profissional por setor/função  por meio período.</span></label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q6a6" name="q6" value="a6">
+                            <label for="q6a6"><span>5% dos profissionais do serviço de saúde.</span></label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q6a7" name="q6" value="a7">
+                            <label for="q6a7"><span>1 profissional  por turno (até 50  funcionários).</span></label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q6a8" name="q6" value="a8">
+                                <label for="q6a8"><span>3 profissionais por turno  (71 a 99 funcionários).
+                            </span></label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q6a9" name="q6" value="a9">
+                            <label for="q6a9"><span>1 profissional por todo o período.</span></label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q6a10" name="q6" value="a10">
+                            <label for="q6a10"><span>Nenhum profissional.</span></label>
+                        </li>
+                    </ul>
+                </div>
+            </form>
         </div>
 </body>
 </html>
