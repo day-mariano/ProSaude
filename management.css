@@ -1,15 +1,4 @@
 @charset 'UTF-8';
-.tooltip {
-    width: 24px;
-    height: 24px;
-    background-color: var(--primary-color);
-    color: white;
-    font-size: 16px;
-    border-radius: 100%;
-    display: inline-block;
-    text-align: center;
-    margin-left: 1rem;
-}
 .question {
     border-width: 1px;
     border-style: solid;
@@ -26,6 +15,8 @@
     border-width: 0;
     border-bottom-width: 1px;
     border-bottom-color: var(--gray-100);
+    display: flex;
+    justify-content: space-between;
 }
 .question ul {
     list-style-type: none;
